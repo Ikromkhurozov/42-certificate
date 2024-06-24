@@ -1,0 +1,193 @@
+/* general styles */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --light-gray-color: #d9d9d9;
+  --course-title-yellow-color: #ffd600;
+  --default-white-color: #ffffff;
+  --extra-gray-color: #a8a8a8;
+  --default-black-color: #000000;
+  --confirmation-date-color: #5c5c5c;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+body {
+  font-family: "WorkSans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0;
+  max-width: 1190px; /* disable this line if background image must cover full website */
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* overview section styles */
+
+.certification__overview {
+  background-image: url("../images/overview-background.svg");
+  background-repeat: no-repeat;
+  /* background-size: cover;  If background image must cover full website you can activate this line */
+  height: 100%;
+  padding-top: 65px;
+}
+
+.certification__overview-course-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.certification__overview-course-title {
+  max-width: 384px;
+  color: var(--light-gray-color);
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 42px;
+}
+
+.certification__overview-course-title strong {
+  color: var(--course-title-yellow-color);
+}
+
+.certification__overview-company-logo {
+  margin-bottom: 30px;
+  max-width: 407px;
+  max-height: 387px;
+}
+
+.certification__overview-document-type {
+  color: var(--default-white-color);
+  font-size: 132px;
+  font-weight: 800;
+  line-height: 172px;
+  letter-spacing: 0.07em;
+  text-align: left;
+  text-transform: uppercase;
+  max-width: 960px;
+  margin: 36px 0 30px 0;
+}
+
+.certification__overview-recipient-name {
+  color: var(--default-white-color);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 66px;
+}
+
+.certification__overview-completion-statement {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: left;
+  max-width: 793px;
+  margin-top: 24px;
+  color: var(--extra-gray-color);
+  padding-bottom: 131px;
+}
+
+.certification__overview-completion-statement span {
+  color: var(--default-white-color);
+}
+
+/* confirmation section styles */
+
+.certification__confirmation {
+  background-image: url("../images/confirmation-background.svg");
+  background-repeat: no-repeat;
+  /* background-size: cover;  If background image must cover full website you can activate this line */
+  height: 100%;
+  position: relative;
+}
+
+.certification__confirmation-qr-code img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -13%;
+  left: 43.8%;
+  right: 50%;
+  border-radius: 4px;
+}
+
+.certification__confirmation-content-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 205px;
+  padding-bottom: 85px;
+}
+
+.certification__confirmation-signature-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.certification__confirmation-signature-wrapper img {
+  padding-bottom: 14px;
+  border-bottom: 0.38px solid #000000;
+}
+
+.author-signature {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 35px;
+  text-align: left;
+  margin-top: 24px;
+  color: var(--default-black-color);
+}
+
+.author-signature::after {
+  content: ",";
+}
+
+.signed-by {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+}
+
+.certification__confirmation-date-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.certification__confirmation-students-image {
+  max-width: 323px;
+  max-height: 159px;
+  margin-bottom: 60px;
+}
+
+.certification__confirmation-date {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+  color: var(--confirmation-date-color);
+}
